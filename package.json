@@ -1,0 +1,23 @@
+{
+  "name": "mock-connector-ecommerce",
+  "version": "1.0.0",
+  "description": "Standalone Mock REST API Server for E-commerce Platforms (Lazada Open Platform Mock)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "tunnel": "ngrok http 4000"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "ecommerce-integrate": "file:../ecommerce_integrate",
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
